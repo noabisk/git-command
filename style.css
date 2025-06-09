@@ -1,0 +1,89 @@
+body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+        
+        code {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+        
+        code {
+            position: relative;
+            background: #2d2d2d;
+            border-left: 4px solid #4CAF50;
+            padding: 14px 16px;
+            border-radius: 0 4px 4px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 600px; /* Fixed width */
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        code:hover {
+            background: rgba(45, 45, 45, 0.3);
+            backdrop-filter: blur(4px);
+        }
+        
+        div:hover > code  {
+            filter: blur(2px);
+            opacity: 0.7;
+        }
+        
+        code::after {
+            content: "Click to copy";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            white-space: nowrap;
+            border: 1px solid #4CAF50;
+        }
+        
+        code:hover::after {
+            opacity: 1;
+        }
+        
+        code.copied {
+            background: rgba(76, 175, 80, 0.15);
+            border-left-color: #81c784;
+        }
+        
+        code.copied::after {
+            content: "Copied!";
+            background: rgba(76, 175, 80, 0.9);
+        }
+        
+        code {
+            transition: all 0.3s ease;
+            display: inline-block;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }

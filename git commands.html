@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+        
+        code {
+            position: relative;
+            background: #2d2d2d;
+            border-left: 4px solid #4CAF50;
+            padding: 14px 16px;
+            margin: 18px 0;
+            border-radius: 0 4px 4px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+            overflow-x: auto;
+            cursor: pointer;
+            transition: all 0.3s ease;
+             display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+        
+        code:hover {
+            background: rgba(45, 45, 45, 0.3);
+            backdrop-filter: blur(4px);
+        }
+    </style>
+        
+    <title>git commands</title>
+</head>
+
+<body>
+    
+    <h1>Git commands</h1>
+    <div data-command='git config --global user.name"write name here"'>
+        <h3>1. Write name </h2>
+        <code>git config --global user.name"write name here"</code>
+        <p>You can change the text (write name here) with name which you want to give to your file. </p>
+    </div>
+    <div data-command='git config --global user.email "your-email@example.com"'>
+        <h3>2.  </h2>
+            <code>git config --global user.email "your-email@example.com"</code>
+        <p>You can add your email by using this command. </p>
+    </div>
+    <div data-command='git status : -s'>
+        <h3>3. Important command </h2>
+        <code>git status : -s</code>
+        <p> The (git status -s) command is a short/summary version of git status that shows a compact
+            overview of your Git repository's changes. </p>
+
+    </div>
+    <div data-command='git init'>
+        <h3>4. Intitialize repositories </h2>
+        <code>git init</code>
+        <p>You can Intitialize your repositories with this command </p>
+    </div>
+    <div data-command='git add'>
+        <h3>5. Stage all files </h2>
+        <code>git add</code>
+        <p>Only stage changed files</p>
+        <code>git add -A</code>
+        <p>Select all files</p>
+        <code>git add -u</code>
+        <p>Select all files included changed and deleted only execpt of new files</p>
+    </div>
+    <div data-command='git commit -m "write messege here"'>
+        <h3>6. Massege and commit</h2>
+        <code>git commit -m "write messege here"</code>
+        <p>
+        <ol>
+            <li>Stages all tracked changes if you ran (git add first).</li>
+            <li>Creates a commit with your message.</li>
+            <li>Records the snapshot in your local repository</li>
+        </ol>
+        </p>
+    </div>
+    <div data-command='git branch'>
+        <h3>7. See branch</h2>
+        <code>git branch</code>
+        <p>By using this command you can see the type of this command</p>
+    </div>
+    <div data-command='git branch :branch name:'>
+        <h3>8. Create branch </h2>
+        <code>git branch :branch name:</code>
+        <p>You can Create branch by using this command</p>
+    </div>
+    <div data-command='git checkout :branch name:'>
+        <h3>9. Go into branch </h2>
+        <code>git checkout :branch name:</code>
+        <p>You can go into branch by using this command </p>
+    </div>
+    <div data-command='git merge branch.name'>
+        <h3>10. Merge branch </h2>
+        <code>git merge branch.name</code>
+        <p>You can merge your branch by this command </p>
+    </div>
+    <div data-command='git push -u origen master'>
+        <h3>11. Push </h2>
+            <code>git push -u origen master</code>
+            <p>To open new origin</p>
+            <code>git push origen master</code>
+            <p>To push in the same origin</p>
+    </div><code>git push -u origen master</code>
+    <div data-command='git branch -d [branchname]'>
+        <h3>12. Delete branch </h3>
+        <code>git branch -d [branchname]</code>
+        <p>You can delete branch with this command</p>
+    </div>
+    <div data-command='git push origin --delete [branch_name]'>
+        <h3>13. Permanently delete branch </h2>
+            <code>git push origin --delete [branch_name]</code>
+        <p>This command delete your branch permanently  </p>
+    </div>
+    <h2>Optional</h2>
+    <div data-command='git --version'>
+        <h3>1. Check version</h2>
+            <code>git --version</code>
+        <p>To check the version of git </p>
+    </div>
+    <div data-command='clear'>
+        <h3>2. Clear terminal </h2>
+            <code>clear</code>
+        <p>You can clear your terminal by this command</p>
+    </div>
+    <div data-command='it log -p -[enter the number]'>
+        <h3>3. Specify change </h2>
+            <code>git log -p -[enter the number]</code>
+        <p>You can specify changes with this command</p>
+    </div>
+    <div data-command='git diff [filename.estention]'>
+        <h3>3. Change fiele</h2>
+            <code>git diff [filename.estention]</code>
+        <p>To change file </p>
+    </div>
+    <div data-command='git diff [filename.extention]'>
+        <h3>4. Check change in stage</h2>
+            <code>git diff [filename.extention]</code>
+        <p>This command tell you the change in stage. </p>
+    </div>
+    <div data-command='git reset [filename.extention]'> 
+        <h3>5. See previous commit</h2>
+            <code>git reset [filename.extention]</code>
+        <p>This command show you the previous commit</p>
+    </div>
+    <div data-command='git checkout [filename.extention]'> 
+        <h3>6. Take file back</h2>
+            <code>git checkout [filename.extention]</code>
+        <p> You can take a file back by this command</p>
+    </div>
+    <div data-command='git checkout'>
+        <h3> </h2>
+            <code>git checkout</code>
+        <p> </p>
+    </div>
+    <div data-command='git pull'>
+        <h3> </h2>
+            <code>git pull</code>
+        <p> </p>
+    </div>
+    <div data-command='ls-la'>
+        <h3> </h2>
+            <code>ls-la</code>
+        <p> </p>
+    </div>
+    <div data-command='git clone [url/of/code/fiel]'>
+        <h3> Download anyone code</h2>
+            <code>git clone [url/of/code/fiel]</code>
+        
+        <p> </p>
+    </div>
+    <div data-command='touch'>
+        <h3> Make new file</h2>
+            <code>touch</code>
+        <p> </p>
+    </div>
+    <div data-command='git checkout -b [branchname]'>
+        <h3> </h2>
+            <code>git checkout -b [branchname]</code>
+        <p> </p>
+    </div>
+    <div data-command='git commit -a -m "message"'>
+        <h3>Reverse the commit </h2>
+            <code>git commit -a -m "message"</code>
+        <p>This command reverse the commit of all files. </p>
+    </div>
+    <div data-command='git rm --cached [filename]'>
+        <h3>Delete file from repository </h2>
+            <code>git rm --cached [filename]</code>
+        <p>It also delete files form repositories. </p>
+    </div>
+
+
+    </body>
+</html>
